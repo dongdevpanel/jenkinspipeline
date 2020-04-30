@@ -2,6 +2,7 @@ node {
   stage('Build')
   {
     echo "Building the Project"
+    sh 'cat test'
     sh 'echo test > ~/test.txt'
     sh 'cat ~/test.txt'
   }
