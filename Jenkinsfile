@@ -1,4 +1,5 @@
 node {
+  notifyBuild('STARTED')
   stage('Checkout')
   {
     checkout scm
