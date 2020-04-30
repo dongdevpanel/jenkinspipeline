@@ -7,4 +7,8 @@ node {
   {
     echo "Deploying the Project"
   }
+  stage('Release')
+  {
+    echo "Releasing the Project"
+  }
 }
