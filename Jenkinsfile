@@ -2,6 +2,7 @@ node {
   stage('Build')
   {
     echo "Building the Project"
+    sh 'touch ~/tes.test'
   }
   stage('Deploy')
   {
