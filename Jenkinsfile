@@ -1,5 +1,4 @@
 node {
-  notifyBuild('STARTED')
   stage('Checkout')
   {
     checkout scm
@@ -14,6 +13,10 @@ node {
   stage('Deploy')
   {
     echo "Deploying the Project"
+  }
+  stage('Test')
+  {
+    echo "Testing"
   }
   stage('Release')
   {
