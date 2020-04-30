@@ -1,7 +1,10 @@
 node {
-  stage('Build')
+  stage('Checkout')
   {
     checkout scm
+  }
+  stage('Build')
+  {
     echo "Building the Project"
     sh 'cat test'
     sh 'echo test > ~/test.txt'
